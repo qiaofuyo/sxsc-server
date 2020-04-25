@@ -1,0 +1,370 @@
+
+{
+  "header": {
+    "reportVersion": 1,
+    "event": "Allocation failed - JavaScript heap out of memory",
+    "trigger": "FatalError",
+    "filename": "report.20200420.031038.13628.0.001.json",
+    "dumpEventTime": "2020-04-20T03:10:38Z",
+    "dumpEventTimeStamp": "1587323438227",
+    "processId": 13628,
+    "cwd": "F:\\专业\\毕业设计\\项目\\server\\bin",
+    "commandLine": [
+      "node",
+      "C:\\Users\\Adminis\\AppData\\Roaming\\npm\\node_modules\\pm2\\lib\\ProcessContainerFork.js"
+    ],
+    "nodejsVersion": "v12.14.0",
+    "wordSize": 64,
+    "arch": "x64",
+    "platform": "win32",
+    "componentVersions": {
+      "node": "12.14.0",
+      "v8": "7.7.299.13-node.16",
+      "uv": "1.33.1",
+      "zlib": "1.2.11",
+      "brotli": "1.0.7",
+      "ares": "1.15.0",
+      "modules": "72",
+      "nghttp2": "1.39.2",
+      "napi": "5",
+      "llhttp": "1.1.4",
+      "http_parser": "2.8.0",
+      "openssl": "1.1.1d",
+      "cldr": "35.1",
+      "icu": "64.2",
+      "tz": "2019c",
+      "unicode": "12.1"
+    },
+    "release": {
+      "name": "node",
+      "lts": "Erbium",
+      "headersUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0-headers.tar.gz",
+      "sourceUrl": "https://nodejs.org/download/release/v12.14.0/node-v12.14.0.tar.gz",
+      "libUrl": "https://nodejs.org/download/release/v12.14.0/win-x64/node.lib"
+    },
+    "osName": "Windows_NT",
+    "osRelease": "6.2.9200",
+    "osVersion": "Windows 8 China",
+    "osMachine": "x86_64",
+    "cpus": [
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 8529453,
+        "nice": 0,
+        "sys": 4566546,
+        "idle": 85886343,
+        "irq": 291796
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 8137093,
+        "nice": 0,
+        "sys": 5625734,
+        "idle": 85219187,
+        "irq": 1647078
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 8567765,
+        "nice": 0,
+        "sys": 4129359,
+        "idle": 86284890,
+        "irq": 103703
+      },
+      {
+        "model": "Intel(R) Core(TM) i5-3210M CPU @ 2.50GHz",
+        "speed": 2494,
+        "user": 7692109,
+        "nice": 0,
+        "sys": 3739546,
+        "idle": 87550359,
+        "irq": 258812
+      }
+    ],
+    "host": "Lenovo-PC"
+  },
+  "javascriptStack": {
+    "message": "No stack.",
+    "stack": [
+      "Unavailable."
+    ]
+  },
+  "nativeStack": [
+    {
+      "pc": "0x000007f6b9471729",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9475b4c",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9474b08",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b956369b",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9d682de",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9d50321",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9c1dbec",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9c25cf1",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9c1b353",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9c19b24",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b9c3adf5",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6b99a6e19",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6ba19404d",
+      "symbol": ""
+    },
+    {
+      "pc": "0x000007f6ba135510",
+      "symbol": ""
+    },
+    {
+      "pc": "0x00000219a6616b4b",
+      "symbol": ""
+    }
+  ],
+  "javascriptHeap": {
+    "totalMemory": 23072768,
+    "totalCommittedMemory": 23072768,
+    "usedMemory": 21566680,
+    "availableMemory": 2176939256,
+    "memoryLimit": 2197815296,
+    "heapSpaces": {
+      "read_only_space": {
+        "memorySize": 262144,
+        "committedMemory": 262144,
+        "capacity": 261872,
+        "used": 32296,
+        "available": 229576
+      },
+      "new_space": {
+        "memorySize": 1048576,
+        "committedMemory": 1048576,
+        "capacity": 1047488,
+        "used": 1047448,
+        "available": 40
+      },
+      "old_space": {
+        "memorySize": 16101376,
+        "committedMemory": 16101376,
+        "capacity": 15955936,
+        "used": 15385640,
+        "available": 570296
+      },
+      "code_space": {
+        "memorySize": 688128,
+        "committedMemory": 688128,
+        "capacity": 562912,
+        "used": 553696,
+        "available": 9216
+      },
+      "map_space": {
+        "memorySize": 1052672,
+        "committedMemory": 1052672,
+        "capacity": 1051072,
+        "used": 710960,
+        "available": 340112
+      },
+      "large_object_space": {
+        "memorySize": 3870720,
+        "committedMemory": 3870720,
+        "capacity": 3833088,
+        "used": 3833088,
+        "available": 0
+      },
+      "code_large_object_space": {
+        "memorySize": 49152,
+        "committedMemory": 49152,
+        "capacity": 3552,
+        "used": 3552,
+        "available": 0
+      },
+      "new_large_object_space": {
+        "memorySize": 0,
+        "committedMemory": 0,
+        "capacity": 1047488,
+        "used": 0,
+        "available": 1047488
+      }
+    }
+  },
+  "resourceUsage": {
+    "userCpuSeconds": 13.218,
+    "kernelCpuSeconds": 1.765,
+    "cpuConsumptionPercent": 0.207205,
+    "maxRss": 59232256,
+    "pageFaults": {
+      "IORequired": 750177,
+      "IONotRequired": 0
+    },
+    "fsActivity": {
+      "reads": 738,
+      "writes": 7527
+    }
+  },
+  "libuv": [
+  ],
+  "environmentVariables": {
+    "=C:": "C:\\",
+    "ALLUSERSPROFILE": "C:\\ProgramData",
+    "APPDATA": "C:\\Users\\Adminis\\AppData\\Roaming",
+    "automation": "true",
+    "autorestart": "true",
+    "axm_actions": "",
+    "axm_dynamic": "[object Object]",
+    "axm_monitor": "[object Object]",
+    "axm_options": "[object Object]",
+    "CLASSPATH": ".E:\\Java\\jdk1.8.0_121\\lib.;E:\\Java\\jdk1.8.0_121\\lib\\dt.jar;E:\\Java\\jdk1.8.0_121\\lib\\tools.jar;",
+    "CommonProgramFiles": "C:\\Program Files\\Common Files",
+    "CommonProgramFiles(x86)": "C:\\Program Files (x86)\\Common Files",
+    "CommonProgramW6432": "C:\\Program Files\\Common Files",
+    "COMPUTERNAME": "LENOVO-PC",
+    "ComSpec": "C:\\WINDOWS\\system32\\cmd.exe",
+    "configsetroot": "C:\\WINDOWS\\ConfigSetRoot",
+    "created_at": "1587316206679",
+    "dp0": "C:\\Users\\Adminis\\AppData\\Roaming\\npm\\",
+    "env": "[object Object]",
+    "exec_interpreter": "node",
+    "exec_mode": "fork_mode",
+    "FP_NO_HOST_CHECK": "NO",
+    "HOMEDRIVE": "C:",
+    "HOMEPATH": "\\Users\\Adminis",
+    "instances": "1",
+    "instance_var": "NODE_APP_INSTANCE",
+    "JAVA_HOME": "E:\\Java\\jdk1.8.0_121",
+    "kill_retry_time": "100",
+    "km_link": "false",
+    "lnkenv": "C:\\Program Files (x86)\\Internet Explorer\\IEXPLORE.EXE",
+    "LOCALAPPDATA": "C:\\Users\\Adminis\\AppData\\Local",
+    "LOGONSERVER": "\\\\LENOVO-PC",
+    "merge_logs": "true",
+    "name": "www",
+    "namespace": "default",
+    "NODE_APP_INSTANCE": "0",
+    "node_args": "",
+    "NUMBER_OF_PROCESSORS": "4",
+    "OS": "Windows_NT",
+    "PATH": "E:\\Xftp\\;E:\\Xshell 6\\;E:\\Python;c:\\windows\\system32;C:\\WINDOWS\\System32\\Wbem;C:\\Users\\Adminis\\AppData\\Roaming;C:\\Users\\Adminis\\AppData\\Local\\Google\\Chrome\\Application;E:\\nodejs\\;E:\\Git\\cmd;E:\\mysql\\mysql server 8.0\\bin;E:\\Anaconda3;E:\\Anaconda3\\Library\\mingw-w64\\bin;E:\\Anaconda3\\Library\\usr\\bin;E:\\Anaconda3\\Library\\bin;E:\\Anaconda3\\Scripts;C:\\Users\\Adminis\\AppData\\Local\\GitHubDesktop\\bin;C:\\Users\\Adminis\\AppData\\Roaming\\npm;E:\\MongoDB\\Server\\4.2.2\\bin",
+    "PATHEXT": ".COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JSE;.WSF;.WSH;.MSC",
+    "PM2_HOME": "C:\\Users\\Adminis\\.pm2",
+    "PM2_USAGE": "CLI",
+    "pmx": "true",
+    "pm_cwd": "F:\\专业\\毕业设计\\项目\\server\\bin",
+    "pm_err_log_path": "C:\\Users\\Adminis\\.pm2\\logs\\www-error.log",
+    "pm_exec_path": "F:\\专业\\毕业设计\\项目\\server\\bin\\www",
+    "pm_id": "1",
+    "pm_out_log_path": "C:\\Users\\Adminis\\.pm2\\logs\\www-out.log",
+    "pm_pid_path": "C:\\Users\\Adminis\\.pm2\\pids\\www-1.pid",
+    "pm_uptime": "1587316206679",
+    "PROCESSOR_ARCHITECTURE": "AMD64",
+    "PROCESSOR_IDENTIFIER": "Intel64 Family 6 Model 58 Stepping 9, GenuineIntel",
+    "PROCESSOR_LEVEL": "6",
+    "PROCESSOR_REVISION": "3a09",
+    "ProgramData": "C:\\ProgramData",
+    "ProgramFiles": "C:\\Program Files",
+    "ProgramFiles(x86)": "C:\\Program Files (x86)",
+    "ProgramW6432": "C:\\Program Files",
+    "PROMPT": "$P$G",
+    "PSModulePath": "C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules\\",
+    "PT5HOME": "e:\\Cisco Packet Tracer 5.3",
+    "PUBLIC": "C:\\Users\\Public",
+    "READYAPPS": "C:\\ProgramData\\Lenovo\\ReadyApps",
+    "restart_time": "0",
+    "status": "launching",
+    "SystemDrive": "C:",
+    "SystemRoot": "C:\\WINDOWS",
+    "TEMP": "C:\\Users\\Adminis\\AppData\\Local\\Temp",
+    "TMP": "C:\\Users\\Adminis\\AppData\\Local\\Temp",
+    "treekill": "true",
+    "TVT": "C:\\Program Files (x86)\\Lenovo",
+    "unique_id": "aa361738-465a-4ad8-b713-fe9e15a62daa",
+    "unstable_restarts": "0",
+    "USERDOMAIN": "Lenovo-PC",
+    "USERDOMAIN_ROAMINGPROFILE": "Lenovo-PC",
+    "USERNAME": "Adminis",
+    "username": "Adminis",
+    "USERPROFILE": "C:\\Users\\Adminis",
+    "vizion": "true",
+    "vizion_running": "false",
+    "VS100COMNTOOLS": "E:\\vc++2010学习版\\Common7\\Tools\\",
+    "watch": "false",
+    "windir": "C:\\WINDOWS",
+    "windowsHide": "true",
+    "_prog": "node"
+  },
+  "sharedObjects": [
+    "E:\\nodejs\\node.exe",
+    "C:\\WINDOWS\\SYSTEM32\\ntdll.dll",
+    "C:\\WINDOWS\\system32\\KERNEL32.DLL",
+    "C:\\WINDOWS\\system32\\KERNELBASE.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dbghelp.dll",
+    "C:\\WINDOWS\\system32\\WS2_32.dll",
+    "C:\\WINDOWS\\system32\\ADVAPI32.dll",
+    "C:\\WINDOWS\\system32\\USER32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\IPHLPAPI.DLL",
+    "C:\\WINDOWS\\system32\\PSAPI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\USERENV.dll",
+    "C:\\WINDOWS\\system32\\CRYPT32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\bcrypt.dll",
+    "C:\\WINDOWS\\system32\\WINMM.dll",
+    "C:\\WINDOWS\\system32\\msvcrt.dll",
+    "C:\\WINDOWS\\system32\\RPCRT4.dll",
+    "C:\\WINDOWS\\system32\\NSI.dll",
+    "C:\\WINDOWS\\SYSTEM32\\sechost.dll",
+    "C:\\WINDOWS\\system32\\GDI32.dll",
+    "C:\\WINDOWS\\SYSTEM32\\WINNSI.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\profapi.dll",
+    "C:\\WINDOWS\\system32\\MSASN1.dll",
+    "C:\\WINDOWS\\system32\\WINMMBASE.dll",
+    "C:\\WINDOWS\\SYSTEM32\\cfgmgr32.dll",
+    "C:\\WINDOWS\\system32\\DEVOBJ.dll",
+    "C:\\WINDOWS\\system32\\IMM32.DLL",
+    "C:\\WINDOWS\\system32\\MSCTF.dll",
+    "C:\\WINDOWS\\system32\\powrprof.dll",
+    "C:\\WINDOWS\\system32\\uxtheme.dll",
+    "C:\\WINDOWS\\system32\\mswsock.dll",
+    "C:\\WINDOWS\\system32\\bcryptprimitives.dll",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc6.DLL",
+    "C:\\WINDOWS\\SYSTEM32\\dhcpcsvc.DLL",
+    "C:\\WINDOWS\\system32\\napinsp.dll",
+    "C:\\WINDOWS\\system32\\pnrpnsp.dll",
+    "C:\\WINDOWS\\system32\\NLAapi.dll",
+    "C:\\WINDOWS\\SYSTEM32\\DNSAPI.dll",
+    "C:\\WINDOWS\\System32\\winrnr.dll",
+    "C:\\WINDOWS\\system32\\wshbth.dll",
+    "C:\\WINDOWS\\SYSTEM32\\cryptbase.dll",
+    "C:\\Windows\\System32\\rasadhlp.dll",
+    "C:\\WINDOWS\\System32\\fwpuclnt.dll"
+  ]
+}

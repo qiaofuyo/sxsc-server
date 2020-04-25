@@ -1,0 +1,58 @@
+{
+	"goods_list": [
+		{
+		"goods_id": "000001",
+		"goods_title": "沈大成鲜肉虾仁小馄饨 120g/袋",
+		"goods_subtitle":"香浓软滑 肉质鲜嫩",
+		"image_url":"http://127.0.0.1:3000/images/home/shop_list/l1.jpg",
+		"goods_price1":"¥8.90",
+		"goods_price2":"¥8.90",
+		"image_buy":"http://127.0.0.1:3000/images/home/shop_list/cart.svg"
+		},
+		{
+		"goods_id": "000002",
+		"goods_title": "沈大成鲜肉虾仁小馄饨 120g/袋",
+		"goods_subtitle":"香浓软滑 肉质鲜嫩",
+		"image_url":"http://127.0.0.1:3000/images/home/shop_list/l1.jpg",
+		"goods_price1":"¥8.90",
+		"goods_price2":"¥8.90",
+		"image_buy":"http://127.0.0.1:3000/images/home/shop_list/cart.svg"
+		},
+		{
+		"goods_id": "000003",
+		"goods_title": "沈大成鲜肉虾仁小馄饨 120g/袋",
+		"goods_subtitle":"香浓软滑 肉质鲜嫩",
+		"image_url":"http://127.0.0.1:3000/images/home/shop_list/l1.jpg",
+		"goods_price1":"¥8.90",
+		"goods_price2":"¥8.90",
+		"image_buy":"http://127.0.0.1:3000/images/home/shop_list/cart.svg"
+		},
+		{
+		"goods_id": "000004",
+		"goods_title": "沈大成鲜肉虾仁小馄饨 120g/袋",
+		"goods_subtitle":"香浓软滑 肉质鲜嫩",
+		"image_url":"http://127.0.0.1:3000/images/home/shop_list/l1.jpg",
+		"goods_price1":"¥8.90",
+		"goods_price2":"¥8.90",
+		"image_buy":"http://127.0.0.1:3000/images/home/shop_list/cart.svg"
+		},
+		{
+		"goods_id": "000005",
+		"goods_title": "沈大成鲜肉虾仁小馄饨 120g/袋",
+		"goods_subtitle":"香浓软滑 肉质鲜嫩",
+		"image_url":"http://127.0.0.1:3000/images/home/shop_list/l1.jpg",
+		"goods_price1":"¥8.90",
+		"goods_price2":"¥8.90",
+		"image_buy":"http://127.0.0.1:3000/images/home/shop_list/cart.svg"
+		},
+		{
+		"goods_id": "000006",
+		"goods_title": "沈大成鲜肉虾仁小馄饨 120g/袋",
+		"goods_subtitle":"香浓软滑 肉质鲜嫩",
+		"image_url":"http://127.0.0.1:3000/images/home/shop_list/l1.jpg",
+		"goods_price1":"¥8.90",
+		"goods_price2":"¥8.90",
+		"image_buy":"http://127.0.0.1:3000/images/home/shop_list/cart.svg"
+		}
+	]
+}
