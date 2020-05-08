@@ -216,6 +216,82 @@ router.get('/api/secondaryclassify([a-r]{1})', (req, res) => {
 	})
 })
 
+// 搜索商品
+router.post('/api/searchGoods', async (req, res) => {
+	let search = Object.keys(req.body)[0]
+	let arr = []  // 存放查询到的商品
+	for (let i = 97; i <= 114; i++) {
+		let lastchar = String.fromCharCode(i)
+		if (lastchar == 'a') {
+			Model = secondaryClassifyModelA
+		}
+		if (lastchar == 'b') {
+			Model = secondaryClassifyModelB
+		}
+		if (lastchar == 'c') {
+			Model = secondaryClassifyModelC
+		}
+		if (lastchar == 'd') {
+			Model = secondaryClassifyModelD
+		}
+		if (lastchar == 'e') {
+			Model = secondaryClassifyModelE
+		}
+		if (lastchar == 'f') {
+			Model = secondaryClassifyModelF
+		}
+		if (lastchar == 'g') {
+			Model = secondaryClassifyModelG
+		}
+		if (lastchar == 'h') {
+			Model = secondaryClassifyModelH
+		}
+		if (lastchar == 'i') {
+			Model = secondaryClassifyModelI
+		}
+		if (lastchar == 'j') {
+			Model = secondaryClassifyModelJ
+		}
+		if (lastchar == 'k') {
+			Model = secondaryClassifyModelK
+		}
+		if (lastchar == 'l') {
+			Model = secondaryClassifyModelL
+		}
+		if (lastchar == 'm') {
+			Model = secondaryClassifyModelM
+		}
+		if (lastchar == 'n') {
+			Model = secondaryClassifyModelN
+		}
+		if (lastchar == 'o') {
+			Model = secondaryClassifyModelO
+		}
+		if (lastchar == 'p') {
+			Model = secondaryClassifyModelP
+		}
+		if (lastchar == 'q') {
+			Model = secondaryClassifyModelQ
+		}
+		if (lastchar == 'r') {
+			Model = secondaryClassifyModelR
+		}
+		await Model.aggregate([
+			{ $unwind : "$cate" },
+			{ $unwind : "$cate.products" },
+			{ $match : {"cate.products.name": {$regex: new RegExp(search,'i')}} },
+			{ $project : {"cate.products": 1} }
+		], (err, docs) => {
+			if(err) console.log(err);
+			// arr = arr.concat(docs)
+			docs.forEach(item=>{
+				arr.push(item.cate.products)
+			})
+		})
+	}
+	res.json(arr)
+})
+
 // 图形验证码
 // const userCaptcha={}  // 保存生成的验证码
 router.get('/api/captcha', (req, res) => {
