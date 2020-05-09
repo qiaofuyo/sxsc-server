@@ -58,11 +58,11 @@ app.use(session({ // .use 增加中间件
 app.all('*', (req, res, next) => {
 	// console.log(req.headers);  // 打印请求头
 	
-	const ALLOW_ORIGIN = [undefined, "http://localhost:3000", "http://localhost:8080", "http://localhost:9090"]  // 白名单
+	const ALLOW_ORIGIN = [undefined, "http://127.0.0.1:3000", "http://localhost:3000", "http://localhost:8080", "http://localhost:9090", "http://test.com", "http://test.com:3000", "http://test.com:9090", "http://xinggui.top", "http://xinggui.top:3000", "http://xinggui.top:9090"]  // 白名单
 	let reqOrigin = req.headers.origin; // 请求头的origin属性
 	
 	if (ALLOW_ORIGIN.includes(reqOrigin)) {
-		res.header('Access-Control-Allow-Origin', reqOrigin);
+		res.header('Access-Control-Allow-Origin', reqOrigin);  // 只能是一个字符串，所以上上要进行if判断
 		res.header('Access-Control-Allow-Methods', 'POST, GET, OPTIONS, DELETE');
 		res.header('Access-Control-Allow-Headers',
 			'Origin, Content-Type, Content-Length, Authorization, Accept, X-Requested-With, accessToken');
