@@ -840,15 +840,9 @@ router.post('/api/settlement', (req, res) => {
 // 确认收货
 router.post('/api/confirm_receipt', (req, res) => {
 	console.log(req.body);
-	userInfoModel.updateOne({
-		"user_orders._id": req.body.id
-	}, {
-		$set: {
-			"user_orders.$.order_status": "已收货"
-		}
-	}, err => {
+	userInfoModel.updateOne({ "user_orders._id": req.body.order_id },{ "$set": { "user_orders.$.order_status": "已收货" } }	, err => {
 		if (err) return
-		userInfoModel.find((err, docs) => {
+		userInfoModel.find({_id: req.body.user_id}, {user_pwd: 0}, (err, docs) => {
 			res.json({
 				message: docs[0],
 				status_code: 200

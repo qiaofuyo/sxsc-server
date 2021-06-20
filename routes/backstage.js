@@ -441,7 +441,7 @@ router.delete('/delorder', (req, res) => {
 			"_id": req.query[0]
 		}
 	}
-	userInfoModel.updateOne({}, {
+	userInfoModel.updateOne({"user_orders._id": req.query[0]}, {
 		$pull: sql
 	}, err => {
 		if (err) return
