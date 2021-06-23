@@ -103,6 +103,7 @@ app.use(express.urlencoded({
 	extended: false
 }));
 app.use(cookieParser());
+// 访问静态目录
 app.use(express.static(path.join(__dirname, 'public')));
 
 // 路由组件——接口
